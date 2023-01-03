@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Nunito&family=Silkscreen&display=swap');
+
+ :root{
+    --darkblue: #0c0c53;
+    --yellow: #907513;
+} 
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 6rem;
+}
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: #0c0c53;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .loader{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.loader.fade-out{
+    top:-120%
+} */
+
+.containerr {
+    width: 85%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.containerr .contentt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerr .contentt .left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 15px;
+}
+
+.contentt .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+
+.contentt .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #afafb6;
+}
+
+.contentt .left-side .details i{
+    font-size: 30px;
+    color: #0c0c53;
+    margin-bottom: 10px;
+}
+
+.contentt .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contentt .left-side .details .text-one,
+.contentt .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+}
+
+.containerr .contentt .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+.contentt .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #0c0c53;
+}
+
+.contentt .right-side p{
+    font-size: 15px;
+    font-weight: 300;
+    color: black; 
+}
+
+
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background: #f0f1f8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+    margin-top: 6px;
+}
+
+.right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #0c0c53;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+  }
+
+.button input[type="button"]:hover{
+    background: #292989;
+}
+
+@media (max-width:950px ){
+    .containerr {
+        width: 90%;
+        padding: 30px 35px 40px 35px;
+    }
+}
+
+@media (max-width:760px ){
+    .containerr {
+        margin: 35px 0;
+        height: 100%;
+    }
+    .containerr .contentt {
+        flex-direction: column-reverse;
+    }
+    .containerr .contentt .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .containerr .contentt .left-side::before{
+        display: none;
+    }
+    .containerr .contentt .right-side{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* navbar starts */
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+.home .content h3{
+    font-size: 5rem;
+    color: #0c0c53;
+    margin: 3px 254px;
+    height: 17vh;
+    width: 38vw;
+    position:relative;
+    
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    color: red;
+    margin: 3px 256px;
+    height: 11vh;
+    width: 38vw;
+    position:relative;
+}
+
+.home .image img{
+    /* height: 30vh; */
+    width: 400px;
+    justify-content: center;
+    
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #907513;
+    padding: 2rem 9%;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+header .logo i{
+    padding-right: .5rem;
+    color: var(--darkblue);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #fff;
+}
+
+header .navbar a:hover{
+    color: var(--darkblue);
+}
+
+#menu-bar{
+    font-size: 3rem;
+    cursor: pointer;
+    color:#fff;
+    border:.1rem solid #fff;
+    border-radius: .3rem;
+    padding:.5rem 1.5rem;
+    display: none;
+}
+
+/* .loader{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.loader.fade-out{
+    top:-120%
+} */
+
+
+
+/* media queries */
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+}
+
+header{
+    padding: 2rem;
+}
+}
+
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #f7f7f7;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid var(--yellow);
+        border-right: .5rem solid var(--yellow);
+        background: #3C1361;
+    }
+}
+
+@media(max-width:400px){
+    html{
+        font-size: 50%;
+}
+}
+/* navbar ends */
